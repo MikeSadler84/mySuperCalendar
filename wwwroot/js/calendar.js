@@ -27,7 +27,7 @@ function displayTask(tasks){
             <label class="task-notes">${tasks.notes}</label>
         </div>
         <i class="fas fa-star important"></i>
-    </div>  
+    </div> 
     `;
     container.append(syntax);
 }
