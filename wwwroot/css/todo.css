@@ -3,6 +3,7 @@ h4 {
     color: white;
     margin-top: 1rem;
     margin-left: 1.1rem;
+    margin-bottom: 1rem;
 }
 
 .parent-container{
@@ -36,14 +37,15 @@ h4 {
     background-color: white;
     padding: .5rem;
     border-radius: 8px;
-    margin: .5rem 1rem;
-    width: 54.5rem;
+    margin: .1rem 1rem;
+    width: 50vw;
 }
 .task-content{
     display: inline-block;
 }
 .task-title{
     display: inline-block;
+    margin-top: .5rem;
 }
 .task-notes{
     display: block;
@@ -63,6 +65,22 @@ i.fas.fa-star.important {
     margin-top: 1.2rem;
     float: right;
     padding-right: 2rem;
+}
+i.fas.fa-plus{
+    font-size: 1.5rem;
+    color: white;
+    padding: .5rem;
+    float: right;
+    margin-top: -3rem;
+    margin-bottom: .5rem;
+    margin-right: 4rem;
+    background-color: rgb(17, 68, 49);
+}
+.btn-primary {
+    color: #fff;
+    background-color: rgb(17, 68, 49);
+    border-color: #1861ac;
+    margin: 1rem;
 }
 
 /*
