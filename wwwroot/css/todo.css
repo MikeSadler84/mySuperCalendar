@@ -37,8 +37,9 @@ h4 {
     background-color: white;
     padding: .5rem;
     border-radius: 8px;
-    margin: .1rem 1rem;
+    margin: .15rem 1rem;
     width: 50vw;
+    box-shadow: black 1px 3px 2px -2px;
 }
 .task-content{
     display: inline-block;
