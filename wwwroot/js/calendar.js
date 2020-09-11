@@ -31,8 +31,47 @@ function displayTask(tasks){
     `;
     container.append(syntax);
 }
+function register(){
+    //get values from the form
+    let title = $("#txtTitle").val();
+    let notes= $("#txtNotes").val();
+    let important= $("#chkImportant").is(":checked");
+
+    //validations
+    if(title.length < 5){
+        alert("Please verify the title");
+        return;
+    }
+    //create an object
+    let task= {
+        title: title,
+        notes: notes,
+        important: important
+    };
+    console.log(task);
+    //send object to the backend
+    $.ajax({
+        url:"/api/createTask",
+        type: "POST",
+        data: JSON.stringify(task),
+        contentType: "application/json",
+        success:res => { // If one parament, tasks => , is the same as function(tasks)
+           console.log("Server says", res); 
+           displayTask(res); // shows the task on save without refreshing
+        },
+        error:details => {
+            console.log("Error getting data", details);
+        }
+    })
+    //clear the form
+    $("#txtTitle").val("");
+    $("#txtNotes").val("");
+    document.getElementById("chkImportant").checked = false;
+}
 function init(){
     console.log("My Calendar Page");
+    $("#btnSave").click(register);
+
     fetchTasks();
 }
 

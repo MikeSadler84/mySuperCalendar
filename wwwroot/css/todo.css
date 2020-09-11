@@ -20,9 +20,9 @@ h4 {
 .details{
     flex: 1;
 }
-.details.hide{
+/* .details.hide{
     display: none;
-}
+} */
 .content{
     display: inline-block;
     background-color: rgb(14, 173, 173);
@@ -38,8 +38,8 @@ h4 {
     padding: .5rem;
     border-radius: 8px;
     margin: .15rem 1rem;
-    width: 50vw;
-    box-shadow: black 1px 3px 2px -2px;
+    width: 45vw;
+    box-shadow:  1px 3px 2px -2px black;
 }
 .task-content{
     display: inline-block;
@@ -75,14 +75,60 @@ i.fas.fa-plus{
     margin-top: -3rem;
     margin-bottom: .5rem;
     margin-right: 4rem;
-    background-color: rgb(17, 68, 49);
+    background-color: rgb(123, 167, 235);
 }
 .btn-primary {
     color: #fff;
-    background-color: rgb(17, 68, 49);
+    background-color: rgb(123, 167, 235);
     border-color: #1861ac;
     margin: 1rem;
+    font-size: 1.2rem;
+    box-shadow:  1px 2px 2px -1.5px black;
 }
+#txtTitle{
+    width: 45vw;
+    height: 3rem;
+    font-size: 1.5rem;
+    margin: 2rem 2rem 0 1rem;
+    border-radius: 5px;
+    background-color: white;
+    border: 2px solid rgb(14, 173, 173);
+}
+.details{
+    padding: 1rem;
+    height: 100vh;
+    width: 45vw;
+    /* background-color: #cecece; */
+}
+#txtNotes{
+    width: 45vw;
+    font-size: 1.5rem;
+    margin: 1rem 2rem 0 1rem;
+    border-radius: 5px;
+    border: 2px solid rgb(14, 173, 173);
+}
+.important{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 1rem .5rem 0 1rem;
+    
+}
+#chkImportant{
+    height:1.2rem;
+    width:1.2rem;
+    border: 2px solid rgb(14, 173, 173);
+}
+#btnSave{
+    margin:1rem 2rem 0 1rem;
+    font-size: 1.2rem;
+    box-shadow:  1px 2px 2px -1.5px black;
+    color: #fff;
+    background-color: rgb(123, 167, 235);
+}
+#btnSave:hover{
+    background-color: #5169d6;
+}
+
 
 /*
 
