@@ -6,52 +6,61 @@ h4 {
     margin-bottom: 1rem;
 }
 
-.parent-container{
+.parent-container {
     display: flex;
     height: 100%;
 }
 
-.side{
+.side {
     flex: 1;
 }
-.content{
+
+.content {
     flex: 1;
 }
-.details{
+
+.details {
     flex: 1;
 }
+
 /* .details.hide{
     display: none;
 } */
-.content{
+.content {
     display: inline-block;
     background-color: rgb(14, 173, 173);
     padding: 1rem;
     height: 100vh;
 }
-#tasks{
+
+#tasks {
     display: inline-block;
 }
-.task{
+
+.task {
     display: inline-block;
     background-color: white;
     padding: .5rem;
     border-radius: 8px;
     margin: .15rem 1rem;
     width: 45vw;
-    box-shadow:  1px 3px 2px -2px black;
+    box-shadow: 1px 3px 2px -2px black;
 }
-.task-content{
+
+.task-content {
     display: inline-block;
 }
-.task-title{
+
+.task-title {
     display: inline-block;
     margin-top: .5rem;
 }
-.task-notes{
+
+.task-notes {
     display: block;
     color: gray;
 }
+
 i.far.fa-circle.check {
     font-size: 2rem;
     color: lightgray;
@@ -59,6 +68,7 @@ i.far.fa-circle.check {
     margin-top: 1.2rem;
     float: left;
 }
+
 i.fas.fa-star.important {
     font-size: 2rem;
     color: lightgray;
@@ -67,7 +77,8 @@ i.fas.fa-star.important {
     float: right;
     padding-right: 2rem;
 }
-i.fas.fa-plus{
+
+i.fas.fa-plus {
     font-size: 1.5rem;
     color: white;
     padding: .5rem;
@@ -77,15 +88,17 @@ i.fas.fa-plus{
     margin-right: 4rem;
     background-color: rgb(123, 167, 235);
 }
+
 .btn-primary {
     color: #fff;
     background-color: rgb(123, 167, 235);
     border-color: #1861ac;
     margin: 1rem;
     font-size: 1.2rem;
-    box-shadow:  1px 2px 2px -1.5px black;
+    box-shadow: 1px 2px 2px -1.5px black;
 }
-#txtTitle{
+
+#txtTitle {
     width: 45vw;
     height: 3rem;
     font-size: 1.5rem;
@@ -94,38 +107,49 @@ i.fas.fa-plus{
     background-color: white;
     border: 2px solid rgb(14, 173, 173);
 }
-.details{
+
+.details {
     padding: 1rem;
     height: 100vh;
     width: 45vw;
-    /* background-color: #cecece; */
+    background-color: #f5f4f4;
 }
-#txtNotes{
+
+.details h4 {
+    color: rgb(14, 173, 173);
+}
+
+#txtNotes {
     width: 45vw;
     font-size: 1.5rem;
     margin: 1rem 2rem 0 1rem;
     border-radius: 5px;
     border: 2px solid rgb(14, 173, 173);
 }
-.important{
+
+.important {
     font-size: 1.5rem;
     font-weight: 600;
     margin: 1rem .5rem 0 1rem;
-    
+    color: rgb(14, 173, 173);
+
 }
-#chkImportant{
-    height:1.2rem;
-    width:1.2rem;
+
+#chkImportant {
+    height: 1.2rem;
+    width: 1.2rem;
     border: 2px solid rgb(14, 173, 173);
 }
-#btnSave{
-    margin:1rem 2rem 0 1rem;
+
+#btnSave {
+    margin: 1rem 2rem 0 1rem;
     font-size: 1.2rem;
-    box-shadow:  1px 2px 2px -1.5px black;
+    box-shadow: 1px 2px 2px -1.5px black;
     color: #fff;
     background-color: rgb(123, 167, 235);
 }
-#btnSave:hover{
+
+#btnSave:hover {
     background-color: #5169d6;
 }
 
